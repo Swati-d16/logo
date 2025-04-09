@@ -1,0 +1,105 @@
+body {
+    background: #1d1d1d;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .logo {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .diamond {
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .bar {
+    position: absolute;
+    width: 175px;
+    height: 22px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Top Bar (Orange) */
+  .top {
+    top: 7px;
+    left: 18px;
+    background: linear-gradient(to right, #f57829, #d94700);
+    
+  }
+  
+  /* Right Bar (Beige) */
+  .right {
+    top: 97px;
+    right: -59px;
+    transform: rotate(90deg);
+    background: linear-gradient(to bottom, #f7f2dd, #e8dcc1);
+  }
+  
+  /* Bottom Bar (Blue) */
+  .bottom {
+    bottom: 3px;
+    left: 18px;
+    background: linear-gradient(to left, #b2e1f0, #75b5c5);
+  }
+  
+  /* Left Bar (Green) */
+  .left {
+    top: 95px;
+    left: -62px;
+    transform: rotate(90deg);
+    background: linear-gradient(to top, #a0cba5, #659866);
+  }
+  
+  /* Centered Text */
+  .center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    pointer-events: none;
+  }
+  
+  .center-text h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  .center-text .html,
+  .center-text .css {
+    color: white;
+  }
+  
+  .center-text .amp {
+    color: #fba837;
+    margin: 0 4px;
+  }
+  
+  .center-text p {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-top: 4px;
+  }
+  
+  /* Optional: Add hover animations */
+  .bar:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
